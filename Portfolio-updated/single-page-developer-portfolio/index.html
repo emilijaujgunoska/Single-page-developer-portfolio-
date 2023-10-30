@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I'm a passionate front-end developer based in the UK with 4 years of experience. Explore my projects and skills, and feel free to get in touch for collaboration or inquiries."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      rel="preload"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header Start -->
+      <header class="header">
+        <div class="container">
+          <div class="navigation">
+            <a href="#" class="navigation-logo">adamkeyes</a>
+
+            <div class="social-links">
+              <a href="https://github.com/" class="social-link">
+                <i class="icon-github"></i>
+              </a>
+
+              <a href="https://frontendmentor.io/" class="social-link">
+                <i class="icon-frontend-mentor"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/" class="social-link">
+                <i class="icon-linkedin"></i>
+              </a>
+
+              <a href="https://twitter.com/" class="social-link">
+                <i class="icon-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+      <!-- Main content start -->
+      <main>
+        <section class="hero">
+          <div class="bg-position hero-rings">
+            <img src="assets/images/pattern-rings.svg" alt="rings icon" />
+          </div>
+
+          <div class="container header-container">
+            <div class="hero-image">
+              <div class="bg-position hero-circle">
+                <img src="assets/images/pattern-circle.svg" alt="rings icon" />
+              </div>
+              <picture>
+                <source
+                  media="(min-width: 48em)"
+                  src ="assets/images/image-profile-tablet.webp"
+                />
+                <source
+                  media="(min-width: 75em)"
+                  src="assets/images/image-profile-desktop.webp"
+                />
+                <img
+                  src="assets/images/image-profile-mobile.webp"
+                  alt="Adam Keyes"
+                  class="image-profile"
+                  fetchpriority="high"
+                />
+              </picture>
+            </div>
+            <div class="hero-content">
+              <h1 class="hero-title title">
+                Nice to meet you! I’m <span>Adam Keyes</span>.
+              </h1>
+              <p class="hero-text">
+                Based in the UK, I’m a front-end developer passionate about
+                building accessible web apps that users love.
+              </p>
+
+              <a href="#" class="button">Contact me</a>
+            </div>
+          </div>
+        </section>
+        <!-- Main content end -->
+        <!-- Skills start -->
+        <section class="skills">
+          <div class="container">
+            <div class="skills-grid">
+              <aside class="skills-content">
+                <h2 class="skills-title">HTML</h2>
+                <p class="skills-experience">4 Years Experience</p>
+              </aside>
+              <aside class="skills-content">
+                <h2 class="skills-title">CSS</h2>
+                <p class="skills-experience">4 Years Experience</p>
+              </aside>
+              <aside class="skills-content">
+                <h2 class="skills-title">JavaScript</h2>
+                <p class="skills-experience">4 Years Experience</p>
+              </aside>
+              <aside class="skills-content">
+                <h2 class="skills-title">Accessibility</h2>
+                <p class="skills-experience">4 Years Experience React</p>
+              </aside>
+
+              <aside class="skills-content">
+                <h2 class="skills-title">React</h2>
+                <p class="skills-experience">3 Years Experience</p>
+              </aside>
+              <aside class="skills-content">
+                <h2 class="skills-title">Sass</h2>
+                <p class="skills-experience">3 Years Experience</p>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills end -->
+        <!--Projects start-->
+        <section class="projects">
+          <div class="container pojects-container">
+            <div class="projects-header">
+              <h2 class="title projects-title">Projects</h2>
+              <a href="#" class="button">Contact me</a>
+            </div>
+
+            <div class="projects-grid">
+              <div class="project">
+                <a class="project-image">
+                  <img
+                    src="./assets/images/thumbnail-project-1-small.webp"
+                    alt="DESIGN PORTFOLIO IMAGE"
+                    loading="lazy"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+                <div class="project-body">
+                  <h3 class="project-title">DESIGN PORTFOLIO</h3>
+                  <div class="project-tags">
+                    <a href="" class="project-tag">HTML</a>
+                    <a href="" class="project-tag">CSS</a>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="#"
+                    class="button o-modal-trigger"
+                    data-modal="modal-1"
+                    >VIEW PROJECT</a
+                  >
+                  <a href="#" class="button">VIEW CODE</a>
+                </div>
+              </div>
+              <div class="o-modal o-modal-hidden" id="modal-1">
+                <div class="o-modal-close">
+                  <a class="o-modal-button-close">&times;</a>
+                </div>
+                <h5 class="o-modal-heading">Project Details</h5>
+                <h2 class="o-modal-list">Client:</h2>
+                <p>ABC-1 Corporation</p>
+
+                <h2 class="o-modal-list">Date:</h2>
+                <p>June 2023</p>
+
+                <h2 class="o-modal-list">Categories:</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>E-commerce</li>
+                </ul>
+                <p class="o-modal-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="o-modal o-modal-overlay o-modal-hidden"></div>
+              <div class="project">
+                <a class="project-image">
+                  <img
+                    src="./assets/images/thumbnail-project-2-small.webp"
+                    alt="E-LEARNING LANDING PAGE"
+                    loading="lazy"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+                <div class="project-body">
+                  <h3 class="project-title">E-LEARNING LANDING PAGE</h3>
+                  <div class="project-tags">
+                    <a href="" class="project-tag">HTML</a>
+                    <a href="" class="project-tag">CSS</a>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="#"
+                    class="button o-modal-trigger"
+                    data-modal="modal-2"
+                    >VIEW PROJECT</a
+                  >
+                  <a href="#" class="button">VIEW CODE</a>
+                </div>
+              </div>
+              <div class="o-modal o-modal-hidden" id="modal-2">
+                <div class="o-modal-close">
+                  <a class="o-modal-button-close">&times;</a>
+                </div>
+                <h5 class="o-modal-heading">Project Details</h5>
+                <h2 class="o-modal-list">Client:</h2>
+                <p>ABC-2 Corporation</p>
+
+                <h2 class="o-modal-list">Date:</h2>
+                <p>June 2023</p>
+
+                <h2 class="o-modal-list">Categories:</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>E-commerce</li>
+                </ul>
+                <p class="o-modal-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="o-modal o-modal-overlay o-modal-hidden"></div>
+              <div class="project">
+                <a class="project-image">
+                  <img
+                    src="./assets/images/thumbnail-project-3-small.webp"
+                    alt="TODO WEB APP"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+                <div class="project-body">
+                  <h3 class="project-title">TODO WEB APP</h3>
+                  <div class="project-tags">
+                    <a href="" class="project-tag">HTML</a>
+                    <a href="" class="project-tag">CSS</a>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="#"
+                    class="button o-modal-trigger"
+                    data-modal="modal-3"
+                    >VIEW PROJECT</a
+                  >
+                  <a href="#" class="button">VIEW CODE</a>
+                </div>
+              </div>
+              <div class="o-modal o-modal-hidden" id="modal-3">
+                <div class="o-modal-close">
+                  <a class="o-modal-button-close">&times;</a>
+                </div>
+                <h5 class="o-modal-heading">Project Details</h5>
+                <h2 class="o-modal-list">Client:</h2>
+                <p>ABC-3 Corporation</p>
+
+                <h2 class="o-modal-list">Date:</h2>
+                <p>June 2023</p>
+
+                <h2 class="o-modal-list">Categories:</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>E-commerce</li>
+                </ul>
+                <p class="o-modal-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="o-modal o-modal-overlay o-modal-hidden"></div>
+              <div class="project">
+                <a class="project-image">
+                  <img
+                    src="./assets/images/thumbnail-project-4-small.webp"
+                    alt="ENTERTAINMENT WEB APP"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+                <div class="project-body">
+                  <h3 class="project-title">ENTERTAINMENT WEB APP</h3>
+                  <div class="project-tags">
+                    <a href="" class="project-tag">HTML</a>
+                    <a href="" class="project-tag">CSS</a>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="#"
+                    class="button o-modal-trigger"
+                    data-modal="modal-4"
+                    >VIEW PROJECT</a
+                  >
+                  <a href="#" class="button">VIEW CODE</a>
+                </div>
+              </div>
+              <div class="o-modal o-modal-hidden" id="modal-4">
+                <div class="o-modal-close">
+                  <a class="o-modal-button-close">&times;</a>
+                </div>
+                <h5 class="o-modal-heading">Project Details</h5>
+                <h2 class="o-modal-list">Client:</h2>
+                <p>ABC-4 Corporation</p>
+
+                <h2 class="o-modal-list">Date:</h2>
+                <p>June 2023</p>
+
+                <h2 class="o-modal-list">Categories:</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>E-commerce</li>
+                </ul>
+                <p class="o-modal-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="o-modal o-modal-overlay o-modal-hidden"></div>
+              <div class="project">
+                <a class="project-image">
+                  <img
+                    src="./assets/images/thumbnail-project-5-small.webp"
+                    alt="MEMORY GAME"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+                <div class="project-body">
+                  <h3 class="project-title">MEMORY GAME</h3>
+                  <div class="project-tags">
+                    <a href="" class="project-tag">HTML</a>
+                    <a href="" class="project-tag">CSS</a>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="#"
+                    class="button o-modal-trigger"
+                    data-modal="modal-5"
+                    >VIEW PROJECT</a
+                  >
+                  <a href="#" class="button">VIEW CODE</a>
+                </div>
+              </div>
+              <div class="o-modal o-modal-hidden" id="modal-5">
+                <div class="o-modal-close">
+                  <a class="o-modal-button-close">&times;</a>
+                </div>
+                <h5 class="o-modal-heading">Project Details</h5>
+                <h2 class="o-modal-list">Client:</h2>
+                <p>ABC-5 Corporation</p>
+
+                <h2 class="o-modal-list">Date:</h2>
+                <p>June 2023</p>
+
+                <h2 class="o-modal-list">Categories:</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>E-commerce</li>
+                </ul>
+                <p class="o-modal-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="o-modal o-modal-overlay o-modal-hidden"></div>
+
+              <div class="project">
+                <a class="project-image">
+                  <img
+                    src="./assets/images/thumbnail-project-6-small.webp"
+                    alt="ART GALLERY SHOWCASE"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+                <div class="project-body">
+                  <h3 class="project-title">ART GALLERY SHOWCASE</h3>
+                  <div class="project-tags">
+                    <a href="" class="project-tag">HTML</a>
+                    <a href="" class="project-tag">CSS</a>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="#"
+                    class="button o-modal-trigger"
+                    data-modal="modal-6"
+                    >VIEW PROJECT</a
+                  >
+                  <a href="#" class="button">VIEW CODE</a>
+                </div>
+              </div>
+              <div class="o-modal o-modal-hidden" id="modal-6">
+                <div class="o-modal-close">
+                  <a class="o-modal-button-close">&times;</a>
+                </div>
+                <h5 class="o-modal-heading">Project Details</h5>
+                <h2 class="o-modal-list">Client:</h2>
+                <p>ABC-6 Corporation</p>
+
+                <h2 class="o-modal-list">Date:</h2>
+                <p>June 2023</p>
+
+                <h2 class="o-modal-list">Categories:</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>E-commerce</li>
+                </ul>
+                <p class="o-modal-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="o-modal o-modal-overlay o-modal-hidden"></div>
+            </div>
+          </div>
+        </section>
+        <!--Projects end-->
+
+        <!-- Contact start-->
+        <footer class="footer" id="contact">
+          <div class="bg-position footer-ring">
+            <img
+              src="assets/images/pattern-rings.svg"
+              alt="rings icon"
+              loading="lazy"
+              width="auto"
+              height="auto"
+            />
+          </div>
+
+          <div class="container footer-container footer-grid">
+            <div class="footer-content">
+              <h2 class="title footer-title">Contact</h2>
+              <p class="footer-text">
+                I would love to hear about your project and how I could help.
+                Please fill in the form, and I’ll get back to you as soon as
+                possible.
+              </p>
+            </div>
+            <form novalidate class="form" method="POST" data-netlify="true">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="name"
+                  name="name"
+                  id="name"
+                  required
+                  class="form-input form-field"
+                />
+                <div class="form-error-message" id="nameError">
+                  Your name must not be empty
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="form-input form-field"
+                />
+                <div class="form-error-message" id="emailError">
+                  Sorry, invalid format here
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-textarea form-field"
+                  placeholder="message"
+                  name="message"
+                  id="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="button form-button">
+                send message
+              </button>
+            </form>
+          </div>
+          <div class="container footer-social-section">
+            <div class="navigation">
+              <a href="#" class="navigation-logo">adamkeyes</a>
+
+              <div class="social-links">
+                <a href="https://github.com/" class="social-link">
+                  <i class="icon-github"></i>
+                </a>
+
+                <a href="https://frontendmentor.io/" class="social-link">
+                  <i class="icon-frontend-mentor"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/" class="social-link">
+                  <i class="icon-linkedin"></i>
+                </a>
+
+                <a href="https://twitter.com/" class="social-link">
+                  <i class="icon-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Contact end -->
+      </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
